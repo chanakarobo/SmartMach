@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "71863870996",
+    "firebase_url": "https://smartmobilevehicle.firebaseio.com",
+    "project_id": "smartmobilevehicle",
+    "storage_bucket": "smartmobilevehicle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71863870996:android:39570ae7ac8ad22a84e901",
+        "android_client_info": {
+          "package_name": "com.example.smartmobilevehicle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71863870996-nhn76fn3irjdhj4op34vanqoqc31107i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartmobilevehicle",
+            "certificate_hash": "0f542f8be35228960a0b23a831c96d3b63314155"
+          }
+        },
+        {
+          "client_id": "71863870996-1mbnqtbaq6j8c8h1ui1t81bhdbd2bi0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_cX4s9zqZ_DyBpIZ8ek6mWrdq9iMVTGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71863870996-1mbnqtbaq6j8c8h1ui1t81bhdbd2bi0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

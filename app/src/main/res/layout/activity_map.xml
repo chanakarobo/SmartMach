@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+
+
+        <fragment
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapActivity" >
+
+        </fragment>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@android:color/darker_gray"
+        app:layout_insetEdge="bottom"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:behavior_peekHeight="55dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            card_view:cardElevation="2dp"
+            card_view:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:text="Create Request" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+
+            <RadioButton
+                android:id="@+id/light_rid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Light Rigit" />
+
+            <RadioButton
+                android:id="@+id/medium_rigit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Medium Rigit" />
+
+            <RadioButton
+                android:id="@+id/hevy_rigit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Heavy Rigit" />
+
+            <RadioButton
+                android:id="@+id/havy_combination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Havy Combination" />
+
+            <RadioButton
+                android:id="@+id/vehicle_carrier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vehicle Carrier" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_login_black"
+                android:onClick="getRequest"
+                android:text="Request"
+                android:textColor="@color/colorWhite" />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/machanic_detail_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        app:backgroundTint="@color/colorWhite"
+        android:src="@drawable/location"
+        android:layout_gravity="bottom|end"
+        app:layout_dodgeInsetEdges="bottom"
+        app:layout_anchorGravity="bottom|right|end"
+        card_view:srcCompat="@tools:sample/avatars" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

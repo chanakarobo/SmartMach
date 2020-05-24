@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".Registration">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="16dp">
+
+        <ScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registration Form"
+                android:textColor="@color/colorBlue"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fname"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorBalackLight"
+                app:errorEnabled="true">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="12dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:maxLines="1"
+                    android:ems="10"
+                    android:hint="Full name"
+                    android:backgroundTint="@color/colorBalackLight"
+                    android:textColor="@color/colorBlack" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorBalackLight"
+                app:errorEnabled="true">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="12dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:maxLines="1"
+                    android:ems="10"
+                    android:hint="E - mail"
+                    android:backgroundTint="@color/colorBalackLight"
+                    android:textColor="@color/colorBlack" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mobile"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorBalackLight"
+                app:errorEnabled="true">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="12dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:maxLines="1"
+                    android:ems="10"
+                    android:hint="Mobile"
+                    android:backgroundTint="@color/colorBalackLight"
+                    android:textColor="@color/colorBlack" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nic"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorBalackLight"
+                app:errorEnabled="true">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="12dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:maxLines="1"
+                    android:ems="10"
+                    android:hint="NIC"
+                    android:backgroundTint="@color/colorBalackLight"
+                    android:textColor="@color/colorBlack" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/personal_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal details"
+                android:textColor="@color/colorBlue"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emergency_numb"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorBalackLight"
+                app:errorEnabled="true">
+
+
+                  <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="12dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:maxLines="1"
+                    android:ems="10"
+                    android:hint="Emergency contact number (without 0)"
+                    android:backgroundTint="@color/colorBalackLight"
+                    android:textColor="@color/colorBlack" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/address"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorBalackLight"
+                app:errorEnabled="true">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="12dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:maxLines="1"
+                    android:ems="10"
+                    android:hint="Address"
+                    android:backgroundTint="@color/colorBalackLight"
+                    android:textColor="@color/colorBlack" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/vehicle_number"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorBalackLight"
+                app:errorEnabled="true">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="12dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:maxLines="1"
+                    android:ems="10"
+                    android:hint="Vehicle Number"
+                    android:backgroundTint="@color/colorBalackLight"
+                    android:textColor="@color/colorBlack" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/comany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Insuerance Company"
+                android:textColor="@color/colorBlue"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btn_insuerance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:text="Select Insuerance Company" />
+
+            <TextView
+                android:id="@+id/ability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set your ability"
+                android:textColor="@color/colorBlue"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/vehicle_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getVehicleUserOnly"
+                android:text="Vehicle user only" />
+
+            <CheckBox
+                android:id="@+id/light_rid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getLightRigit"
+                android:text="Light Rigid" />
+
+            <CheckBox
+                android:id="@+id/medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getMediumRigit"
+                android:text="Medium Rigid" />
+
+            <CheckBox
+                android:id="@+id/hevy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getHevyRigid"
+                android:text="Hevy Rigid" />
+
+            <CheckBox
+                android:id="@+id/hevy_comb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getHevyComb"
+                android:text="Hevy Combination" />
+
+            <CheckBox
+                android:id="@+id/carrier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getVehicleCarrier"
+                android:text="Vehicle Carrier" />
+
+
+
+            <Button
+                android:id="@+id/reg_btn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_login_black"
+                android:text="Register"
+                android:textColor="@color/colorWhite" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</LinearLayout>

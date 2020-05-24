@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SmartMach</string>
+    <string name="nav_inbox">Mesagez</string>
+    <string name="nav_drafts">Draftz</string>
+    <string name="nav_sent">Logout</string>
+    <string name="nav_trash">In da trash</string>
+    <string name="nav_support">Support</string>
+    <string name="nav_help">Halp</string>
+    <string name="nav_feedback">Giv us feedback</string>
+    <string name="nav_open_drawer">Open navigation drawer</string>
+    <string name="nav_close_drawer">Close navigation drawer</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_map_recive">Map</string>
+
+    <string-array name="vehicle_types">
+        <item>Fuel stations</item>
+        <item>Tire centers</item>
+    </string-array>
+    <string name="title_activity_patrol_shed_map">Map</string>
+
+</resources>
